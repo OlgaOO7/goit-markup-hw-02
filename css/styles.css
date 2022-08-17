@@ -2,23 +2,31 @@
   --basic-text-color: #212121;
   --secondary-text-color: #757575;
   --white-text-color: #ffffff;
-  --accent-text-color: #2196f3;
+  --accent-text-logo-color: #2196f3;
   --secondary-bakground-color: #2f303a;
   --main-background-color: #ffffff;
   --tertiary-background-color: #f5f4fa;
+  --logo-accent-header-color: #000000;
+  --button-background-color: #2196f3;
+  --button-hover-background-color: #188ce8;
+  --shadow-color: rgba(0, 0, 0, 0.15);
+  --filter-shadow-one-color: rgba(0, 0, 0, 0.1);
+  --filter-shadow-two-color: rgba(0, 0, 0, 0.08);
+  --filter-shadow-three-color: rgba(0, 0, 0, 0.12);
+  --contact_link_color: rgba(255, 255, 255, 0.6);
+  --button-border-color: #f5f4fa;
 }
 
 body {
   background-color: var(--main-background-color);
   color: var(--basic-text-color);
   font-family: Roboto, sans-serif;
-  font-weight: 500;
   letter-spacing: 0.03em;
 }
 
 /* Logo, head and footer logo */
 .logo {
-  color: #2196f3;
+  color: var(--accent-text-logo-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -27,7 +35,7 @@ body {
 }
 
 .logo .accent-black {
-  color: #000000;
+  color: var(--logo-accent-header-color);
 }
 
 .logo .accent-white {
@@ -42,6 +50,7 @@ body {
 
 .site-nav .link {
   color: var(--basic-text-color);
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -50,11 +59,12 @@ body {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--accent-text-color);
+  color: var(--accent-text-logo-color);
 }
 
 .site-nav .link-current {
-  color: var(--accent-text-color);
+  color: var(--accent-text-logo-color);
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -74,7 +84,7 @@ body {
 
 .contact-nav .link:hover,
 .contact-nav .link:focus {
-  color: var(--accent-text-color);
+  color: var(--accent-text-logo-color);
 }
 
 /* Hero */
@@ -97,9 +107,9 @@ body {
 /* Button */
 
 .button {
-  background-color: #2196f3;
+  background-color: var(--button-background-color);
   color: var(--white-text-color);
-  border: #2196f3;
+  border: var(--button-background-color);
   cursor: pointer;
   font-family: inherit;
   font-weight: 700;
@@ -112,8 +122,8 @@ body {
 
 .button:hover,
 .button:focus {
-  background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--button-hover-background-color);
+  box-shadow: 0px 4px 4px var(--box-shadow-color);
   border-radius: 4px;
 }
 
@@ -132,7 +142,7 @@ body {
 
 .features .features-title {
   color: var(--basic-text-color);
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -155,6 +165,7 @@ body {
 }
 
 .team-part .team-subtitle {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -175,7 +186,6 @@ body {
 
 .contact-adress .a-contact,
 .contact .contact-link {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
@@ -187,11 +197,11 @@ body {
 }
 
 .contact .contact-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--contact_link_color);
 }
 
 .contact .contact-link:hover {
-  color: var(--accent-text-color);
+  color: var(--accent-text-logo-color);
 }
 
 /* button portfolio */
@@ -210,12 +220,12 @@ body {
 }
 
 .button-portfolio {
-  background-color: #f5f4fa;
+  background-color: var(--tertiary-background-color);
   color: var(--basic-text-color);
-  border: #f5f4fa;
+  border: var(--button-border-color);
   cursor: pointer;
   font-family: inherit;
-  font-weight: inherit;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
@@ -224,10 +234,10 @@ body {
 
 .button-portfolio:hover,
 .button-portfolio:focus {
-  background-color: #2196f3;
+  background-color: var(--button-background-color);
   color: var(--white-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px var(--filter-shadow-one-color), 0px 1px 2px var(--filter-shadow-two-color),
+    0px 2px 2px var(--filter-shadow-three-color);
   border-radius: 4px;
 }
 
